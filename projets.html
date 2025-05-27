@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet DOMOMIX - Noah HIMBERT</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1f3b57;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #aad4ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1f3b57;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #37587d;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      max-width: 100%;
+    }
+
+    a.portfolio-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #1f3b57;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="iutnantes.jpg" alt="Logo IUT Nantes" style="width:120px; border-radius:8px;">
+    <h1>Noah HIMBERT</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="stage.html">Stage</a>
+      <a href="projets.html">Projets</a>
+      <a href="competences.html">Compétences</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Projet SAÉ 4 – DOMOMIX</h2>
+
+      <p><strong>Période :</strong> Semestre 4 – Année 2025<br>
+      <strong>Travail en équipe :</strong> Noah HIMBERT, Elouan EHANNO, Tom CHAUVIÈRE</p>
+
+      <h3>Objectif du projet</h3>
+      <p>
+        Le projet DOMOMIX vise à développer un système domotique intelligent permettant de gérer automatiquement un volet roulant et le chauffage, selon les conditions climatiques (température, humidité, vent, qualité de l’air). Ce système utilise le protocole sans fil EnOcean, reconnu pour sa faible consommation d’énergie.
+      </p>
+
+      <h3>Fonctionnalités prévues</h3>
+      <p>
+        Le système devra détecter les données environnementales via des capteurs (CO₂, COV, température, humidité) et agir automatiquement : fermeture du volet en cas de forte chaleur ou de vent, régulation du chauffage, et affichage de toutes les informations sur une interface web accessible à distance.
+      </p>
+
+      <h3>Technologies utilisées</h3>
+      <p>
+        Le projet repose sur :
+        - des capteurs EnOcean et une antenne radio,<br>
+        - un Raspberry Pi (matériel en attente),<br>
+        - le langage Python pour la communication et les traitements,<br>
+        - Flask (serveur web) et SQLite (base de données),<br>
+        - HTML/CSS/JavaScript pour l’interface utilisateur,<br>
+        - DolphinView pour l’analyse des trames capteurs.
+      </p>
+
+      <h3>Mon rôle personnel</h3>
+      <p>
+        J’ai participé activement à la rédaction du cahier des charges, à l’analyse technique du protocole EnOcean et à la prise en main des scripts Python fournis. J’ai également effectué les premiers tests avec l’antenne, et participé à la structuration de l’interface web.
+      </p>
+
+      <h3>Partie « Concevoir »</h3>
+      <p>
+        Lors de la phase de conception, nous avons réalisé :<br>
+        - une analyse fonctionnelle complète (diagramme pieuvre),<br>
+        - le chiffrage du matériel nécessaire,<br>
+        - le diagramme de Gantt pour le suivi de projet.
+      </p>
+
+      <img src="concevoir.PNG" alt="Diagramme de conception">
+      <img src="chiffrage.PNG" alt="Chiffrage du matériel">
+
+      <p>
+        Pour consulter le détail de cette phase de conception, tu peux consulter mon fichier Excel :
+        <br>
+        <a class="portfolio-link" href="Portfolio-Noah-Himbert.xlsx" download>
+          Télécharger le portfolio Excel (Partie CONCEVOIR)
+        </a>
+      </p>
+
+      <h3>Avancement actuel</h3>
+      <p>
+        À ce jour, nous avons terminé la partie analyse et organisation. Les tests préliminaires sur les capteurs sont en cours, et la mise en place de l’environnement serveur (Flask + base SQLite) est en préparation. Le Raspberry Pi sera intégré dès réception pour finaliser l’architecture du système.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
